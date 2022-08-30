@@ -1,0 +1,18 @@
+# File created by Brandon Januska-Wilson
+# File implememted by Brandon Januska-Wilson
+Resources:
+  ReservationsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      "AttributeDefinitions":
+        - "AttributeName": "reservationId"
+          "AttributeType": "S"
+        - "AttributeName": "tripId"
+          "AttributeType": "S"
+      "KeySchema":
+        - "AttributeName": "reservationId"
+          "KeyType": "HASH"
+        - "AttributeName": "tripId"
+          "KeyType": "RANGE"
+      BillingMode: PAY_PER_REQUEST
+      TableName: "Reservations"

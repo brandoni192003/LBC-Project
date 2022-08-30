@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- File created by Kenzie Academy -->
+<!-- File updated by Brandon Januska-Wilson -->
+<html>
+<head>
+    <script type="text/javascript" src="employeePage.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body class="background">
+    <header class="header" id="header">
+        <div class="site-title">
+            <a class="header_home" href="bookReservation.html">Cool Cats Cruises Reservation Planner</a>
+        </div>
+        <div>
+            <a href="bookReservation.html">Book a Reservation</a>
+        </div>
+    </header>
+    <p class="about">
+        Trip management and reservation records.
+    </p>
+    <div class="card">
+        <h2>Create Trip</h2>
+        <form class="card-content" id="create-form">
+            <p class="form-field">
+                <label>Cost</label>
+                <input type="text" required class="validated-field" id="create-cost-field">
+                <label>Date of Departure</label>
+                <input type="text" required class="validated-field" id="create-start-date-field">
+                <label>Duration (in weeks)</label>
+                <input type="text" required class="validated-field" id="create-duration-field">
+                <label>Destination</label>
+                <input type="text" required class="validated-field" id="create-destination-field">
+            </p>
+            <button type="submit">Create</button>
+        </form>
+    </div>
+    <div class="card">
+        <h2>Modify Trip</h2>
+        <b>Type in a valid trip ID, then the credentials that will be changed</b>
+        <form class="card-content" id="update-form">
+            <p class="form-field">
+                <label>Trip ID</label>
+                <input type="text" required class="validated-field" id="update-trip-id-field">
+                <label>Cost</label>
+                <input type="text" required class="validated-field" id="update-cost-field">
+                <label>Date of Departure</label>
+                <input type="text" required class="validated-field" id="update-start-date-field">
+                <label>Duration (in weeks)</label>
+                <input type="text" required class="validated-field" id="update-duration-field">
+                <label>Destination</label>
+                <input type="text" required class="validated-field" id="update-destination-field">
+            </p>
+            <button type="submit">Modify</button>
+        </form>
+    </div>
+    <div class="card">
+        <h2>Cancel Trip</h2>
+        <form class="card-content" id="delete-form">
+            <p class="form-field">
+                <label>Trip ID</label>
+                <input type="text" required class="validated-field" id="delete-trip-id-field">
+            </p>
+            <button type="submit">Cancel</button>
+        </form>
+    </div>
+    <div class="card">
+        <h2>Get all Reservations by Trip ID</h2>
+        <form class="card-content" id="get-by-trip-id-form">
+            <p class="form-field">
+                <label>Trip ID</label>
+                <input type="text" required class="validated-field" id="get-trip-id-field">
+            </p>
+            <button type="submit">Retrieve</button>
+        </form>
+    </div>
+    <div class="card" id="reservations-result">
+        <h2>Booked Reservations:</h2>
+        <p id="reservations-info"></p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- File created by Kenzie Academy -->
+<!-- File updated by Brandon Januska-Wilson -->
+<html>
+<head>
+    <script type="text/javascript" src="bookReservationPage.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body class="background">
+    <header class="header" id="header">
+        <div class="site-title">
+            <a class="header_home" href="bookReservation.html">Cool Cats Cruises Reservation Planner</a>
+        </div>
+        <div>
+            <a href="employee.html">Go to Employee Page</a>
+        </div>
+    </header>
+    <p class="about">
+        Welcome to C^3 Cruise Lines!  The #1 online reservation planning platform.
+    </p>
+    <div class="card" id="trip-result">
+        <h2>Browse Available Trips</h2>
+        <p id="trip-info"></p>
+    </div>
+    <div class="card">
+        <h2>Book Reservation</h2>
+        <form class="card-content" id="create-form">
+            <p class="form-field">
+                <label>ID of Trip</label>
+                <input type="text" required class="validated-field" id="create-trip-id-field">
+                <label>First and Last Name</label>
+                <input type="text" required class="validated-field" id="create-fullName-field">
+            </p>
+            <button type="submit">Book</button>
+        </form>
+    </div>
+    <div class="card">
+        <h2>Get Reservation Details By ID</h2>
+        <form class="card-content" id="get-by-id-form">
+            <p class="form-field">
+                <label>Reservation ID</label>
+                <input type="text" required class="validated-field" id="id-field">
+            </p>
+            <button type="submit">Retrieve</button>
+        </form>
+    </div>
+    <div class="card">
+        <h2>Modify Reservation</h2>
+        <b>Type in your reservation & trip ID, then the credentials you want to change</b>
+        <form class="card-content" id="update-form">
+            <p class="form-field">
+                <label>Reservation ID</label>
+                <input type="text" required class="validated-field" id="update-id-field">
+                <label>ID of Trip</label>
+                <input type="text" required class="validated-field" id="update-trip-id-field">
+                <label>First and Last Name</label>
+                <input type="text" required class="validated-field" id="update-fullName-field">
+            </p>
+            <button type="submit">Modify</button>
+        </form>
+    </div>
+    <div class="card">
+        <h2>Cancel Reservation</h2>
+        <form class="card-content" id="delete-form">
+            <p class="form-field">
+                <label>Reservation ID</label>
+                <input type="text" required class="validated-field" id="delete-id-field">
+            </p>
+            <button type="submit">Cancel</button>
+        </form>
+    </div>
+    <div class="card" id="reservation-result">
+        <h2>Current Reservation Details:</h2>
+        <p id="reservation-info"></p>
+    </div>
+
+</body>
+</html>
